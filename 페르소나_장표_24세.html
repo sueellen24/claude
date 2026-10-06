@@ -1,0 +1,57 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>페르소나 — 한지은 24세</title><style>
+:root{--ink:#2b1a24;--soft:#6a5a62;--paper:#fbf6f7;--card:#fff;--lab:#f4e9ee;--line:#e0cfd6;--c1:#6e2c45;--gold:#a8782c;--red:#b83c4b;--dark:#2b1a24}
+*{box-sizing:border-box}html,body{margin:0;background:#e9e2e5}body{font-family:-apple-system,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",sans-serif;color:var(--ink)}
+#stage{width:100vw;height:56.25vw;max-height:100vh;overflow:hidden;position:relative;margin:0 auto}
+.slide{width:1600px;height:900px;background:var(--paper);position:absolute;left:0;top:0;transform-origin:0 0;padding:34px 44px 0;display:grid;grid-template-columns:330px 1fr 1fr;grid-template-rows:auto minmax(0,1fr) auto auto;gap:14px 22px;overflow:hidden}
+header{grid-column:1/4;display:flex;justify-content:space-between;align-items:baseline;border-bottom:3px solid var(--c1);padding-bottom:8px}
+header h1{margin:0;font-size:30px;color:var(--c1)}header span{font-size:15px;color:var(--soft)}
+.left{display:flex;flex-direction:column;gap:12px}
+.photo{position:relative;width:100%;height:270px;border:2px dashed var(--line);background:var(--lab);display:grid;place-items:center;overflow:hidden;cursor:pointer;text-align:center;color:var(--soft);font-size:15px}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}.photo.has img{display:block}.photo.has .ph{display:none}.photo.has{border-style:solid}
+.photo svg{width:90px;opacity:.5;margin-bottom:6px}.photo input{display:none}.rm{position:absolute;right:6px;top:6px;z-index:2;display:none;background:rgba(0,0,0,.55);color:#fff;border:0;border-radius:4px;font-size:12px;padding:3px 8px;cursor:pointer}.photo.has .rm{display:block}
+.name{font-size:28px;font-weight:800;line-height:1.15}.name small{display:block;font-size:15px;font-weight:600;color:var(--gold);margin-top:4px}
+.quote{background:var(--dark);color:#f3d9a4;padding:12px 14px;font-size:15.5px;line-height:1.5;font-weight:600}.quote i{display:block;font-style:normal;font-size:11px;color:#bfa;opacity:.7;margin-top:4px;font-weight:400}
+.facts{border:1px solid var(--line);background:var(--card);font-size:14.5px}.facts div{display:grid;grid-template-columns:74px 1fr;padding:6px 10px;border-bottom:1px solid var(--line)}.facts div:last-child{border:0}.facts b{color:var(--c1)}
+.col{display:flex;flex-direction:column;gap:10px;min-height:0}
+.sec{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--c);padding:8px 14px 6px;flex:1 1 auto;min-height:0}
+.sec h2{margin:0 0 7px;font-size:19px;color:var(--c);display:flex;align-items:center;gap:8px}.sec h2 .n{width:22px;height:22px;border:2px solid var(--c);border-radius:50%;display:grid;place-items:center;font-size:12px}
+.sec ul{margin:0;padding-left:18px;font-size:15.5px;line-height:1.5}.sec li{margin-bottom:4px}
+.t{display:inline-block;font-size:10px;font-weight:700;color:#fff;background:var(--c1);padding:0 5px;border-radius:3px;margin-right:5px;vertical-align:1px}.t.r{background:var(--gold)}
+.kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.kpi div{background:var(--lab);padding:5px 8px;text-align:center}.kpi b{display:block;font-size:21px;color:var(--c1);line-height:1.1}.kpi span{font-size:12px;color:var(--soft)}
+.jtbd{font-size:16px;line-height:1.55}
+.sum{grid-column:1/4;background:var(--dark);color:#f3d9a4;padding:12px 22px;font-size:17.5px;font-weight:700;display:grid;grid-template-columns:130px 1fr;align-items:center;margin:0 -44px;padding-left:44px;padding-right:44px}
+.sum em{font-style:normal;font-size:14px;color:#d9b36a}
+.foot{grid-column:1/4;font-size:11px;color:var(--soft);margin:-6px 0 4px}
+@page{size:1600px 900px;margin:0}@media print{html,body{background:none}#stage{width:1600px;height:900px;max-height:none}.slide{transform:none!important}.rm{display:none!important}}
+</style></head><body><div id="stage"><div class="slide" id="s">
+<header><h1>PERSONA — 딥클렌징 트렌드형 (유형 A)</h1><span>3조 · 클렌징 | 구매 데이터 50명 + 올리브영 리뷰 43건 기반 (가상 데이터)</span></header>
+<div class="left">
+<label class="photo" id="ph"><button class="rm" id="rm" type="button">사진 삭제</button><img id="im" alt="페르소나 사진"><div class="ph"><svg viewBox="0 0 24 24" fill="#6a5a62"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg><br>클릭해서 사진 첨부<br><small>(JPG·PNG, 이 브라우저에만 저장)</small></div><input type="file" accept="image/*" id="fi"></label>
+<div class="name">한지은 (가명) · 24세<small>마무리 세안까지 꼼꼼히 따지는 모공 고민러</small></div>
+<div class="quote">“오일·밤으로 지우고 폼으로 마무리해야 개운해요. 근데 당기거나 트러블 나면 바로 바꿔요.”<i>※ 데이터에서 도출한 합성 대표 발화</i></div>
+<div class="facts"><div><b>나이·성별</b><span>24세 여성 (핵심 집단 23~25세)</span></div><div><b>피부</b><span>지성·복합성 16/20</span></div><div><b>주 채널</b><span>올리브영 앱·매장 17/20</span></div><div><b>직업·거주</b><span>데이터에 없음</span></div><div><b>유형 규모</b><span>50명 중 20명(40%)</span></div></div>
+</div>
+<div class="col">
+<section class="sec" style="--c:#a36868"><h2><span class="n">2</span>피부 상태와 고민</h2><ul><li><span class="t">구매</span>모공·블랙헤드 11/20(55%), 메이크업 잔여감 5</li><li><span class="t r">리뷰</span>유분은 많은데 <b>세안 후 속당김</b> — 건조·당김 29/43건(1위)</li><li><span class="t r">리뷰</span>좁쌀·트러블 → 세안제 바꾸면 달라진다고 믿음 (27/43건)</li><li><span class="t r">리뷰</span>약산성의 <b>미끄덩·잔여감</b>이 싫음 (15/43건)</li></ul></section>
+<section class="sec" style="--c:#9b5f6e"><h2><span class="n">3</span>현재 루틴</h2><ul><li><span class="t">구매</span>오일·밤 1차 → <b>폼클렌저 2차(이중세안)</b>, 토너 패드·모공 팩 동반</li><li><span class="t r">리뷰</span>폼을 2차·마무리 세안 10건, 아침 세안 11건</li><li><span class="t">구매</span>연 8.8회 · 41일 주기 · 대용량 12/20</li></ul></section>
+<section class="sec" style="--c:#a8782c"><h2><span class="n">4</span>정보 탐색 경로</h2><ul><li><span class="t">구매</span><b>유튜브 9 + 숏폼 9 = 18/20(90%)</b>, 커뮤니티 2</li><li><span class="t r">리뷰</span>구매 전 올리브영 후기 비교, 유튜버 추천, 성분 확인 병행</li><li><span class="t">구매</span>구매는 올리브영 17/20 (매장 10·앱 7)</li></ul></section>
+</div>
+<div class="col">
+<div class="kpi"><div><b>연 8.8회</b><span>연 구매 횟수</span></div><div><b>약 2만원</b><span>1회 평균 단가</span></div><div><b>67%</b><span>세일 구매 비중</span></div><div><b>85%</b><span>동일 제품 재구매 (17/20)</span></div><div><b>41일</b><span>구매 주기</span></div><div><b>1.3개</b><span>구매 브랜드 수</span></div></div>
+<section class="sec" style="--c:#a8782c"><h2><span class="n">5</span>구매 결정 요인</h2><ul><li><span class="t">구매</span><b>가격 혜택:</b> 세일 비중 평균 67%, 대용량·1+1 선호</li><li><span class="t r">리뷰</span><b>순함과 개운함 양립</b>: 저자극 30·세정력 27·거품 20 /43건</li><li><span class="t r">리뷰</span><b>실패 신호</b>: 미끄덩+트러블·속당김·홍조·냄새 → 바로 중단</li><li><span class="t">구매</span><b>이탈 위험</b>: 이탈 3명 모두 숏폼 유입·세일 65~75%</li></ul></section>
+<section class="sec" style="--c:#b83c4b"><h2><span class="n">6</span>JTBD — 무엇을 해결하려 사는가</h2><div class="jtbd">오일·밤으로 지운 뒤 <b>마무리 세안은 잔여감 없이 개운하게</b>, 하지만 <b>당기거나 트러블이 나지 않게</b> 하고 싶다. 영상·후기로 검증된 제품을 <b>세일가에 대용량으로</b> 사서 부담 없이 쓰고 싶다.</div></section>
+<section class="sec" style="--c:#6e2c45"><h2><span class="n">★</span>우리 브랜드 시사점</h2><ul><li>유튜브·숏폼에서 “이중세안 2차용, 안 당기는 개운함” 메시지로 노출</li><li>대용량·1+1·세일 시즌 프로모션으로 재구매 고정</li><li>첫 사용 실패(당김·트러블) 방지: 사용법·피부별 가이드 제공</li></ul></section>
+</div>
+<div class="sum"><span><em>한 문장 요약</em></span><span>영상과 후기로 확인한 딥클렌징 오일·밤과 폼클렌저를 올리브영 세일 때 대용량으로 사서 이중세안하는 24세 — 모공은 개운하게 지우고 싶지만 당김·트러블·미끄덩함이 한 번이라도 나면 바로 갈아타는 고객.</span></div>
+<div class="foot">근거: 3조_클렌징 가상 구매 고객 50명 + 올리브영 클렌징폼 리뷰 43건(비플레인 16·라운드랩 14·마녀공장 13). 구매·리뷰 응답자는 서로 다른 사람이며 연결은 해석입니다. 합성 인물·수업용 가상 데이터·소표본 — 실제 통계로 인용하지 마세요.</div>
+</div></div>
+<script>
+var s=document.getElementById('s'),st=document.getElementById('stage');
+function fit(){if(matchMedia('print').matches)return;var w=Math.min(innerWidth,innerHeight*16/9);st.style.width=w+'px';st.style.height=w*9/16+'px';s.style.transform='scale('+w/1600+')'}
+addEventListener('resize',fit);fit();
+var K='persona_photo_A',ph=document.getElementById('ph'),im=document.getElementById('im');
+function show(u){im.src=u;ph.classList.add('has')}
+try{var sv=localStorage.getItem(K);if(sv)show(sv)}catch(e){}
+document.getElementById('fi').addEventListener('change',function(e){var f=e.target.files[0];if(!f)return;var r=new FileReader();r.onload=function(){show(r.result);try{localStorage.setItem(K,r.result)}catch(e){}};r.readAsDataURL(f)});
+document.getElementById('rm').addEventListener('click',function(e){e.preventDefault();e.stopPropagation();ph.classList.remove('has');im.removeAttribute('src');try{localStorage.removeItem(K)}catch(x){}});
+</script></body></html>
